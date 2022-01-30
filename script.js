@@ -137,13 +137,13 @@ const playSong = () => {
   if (isPlaying === 0) {
     isPlaying = 1;
     songElement.play();
-    playButtonElement.classList.toggle("la-play");
-    playButtonElement.classList.toggle("la-pause");
+    playButtonElement.classList.remove("la-play");
+    playButtonElement.classList.add("la-pause");
   } else {
     isPlaying = 0;
     songElement.pause();
-    playButtonElement.classList.toggle("la-play");
-    playButtonElement.classList.toggle("la-pause");
+    playButtonElement.classList.add("la-play");
+    playButtonElement.classList.remove("la-pause");
   }
   playheadMovement();
 };
