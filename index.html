@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>MusicPlayer</title>
+  </head>
+
+  <body>
+    <section id="player-container">
+      <div id="artwork-container">
+        <img id="artwork" src="img/blue.jpg" alt="artwork" />
+      </div>
+
+      <div id="controls-container">
+        <div id="info">
+          <div id="song-info">
+            <p id="song-title">Title</p>
+            <p id="artist-name">by Artist Name</p>
+          </div>
+
+          <div id="playist-info">
+            <p>Playlist: <span id="playlist-status">1</span> of 3</p>
+            <p>Good Vibes ✌️</p>
+          </div>
+        </div>
+
+        <div id="song-controls">
+          <div id="progress-bar"><div id="playhead"></div></div>
+
+          <div id="buttons-container">
+            <div id="back-button-container" class="button">
+              <i class="las la-step-backward"></i>
+            </div>
+
+            <div id="play-button-container" class="button">
+              <i class="las la-play"></i>
+            </div>
+
+            <div id="forward-button-container" class="button">
+              <i class="las la-step-forward"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
